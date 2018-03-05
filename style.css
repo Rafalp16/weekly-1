@@ -1,4 +1,5 @@
 @font-face { font-family: "TitilliumText22"; src: url('fonts/TitilliumText22.otf'); }
+@font-face { font-family: "TitilliumText22L"; src: url('fonts/TitilliumText22Light.otf'); }
 
 body {
     background: url(img/background.png) no-repeat center top / cover;
@@ -7,23 +8,67 @@ body {
 .site-header {
     width: 26.8125em;
     margin: 3.4375em auto 0;
-    font-family: 
 }
 
 .site-header__logo {
     opacity: 0.2;
 }
 
-.site-main__register-form-box {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+.register-form {
+    text-align: center;
+    margin-left: 5.375em;
+    width: 26.25em;
+    height: 28.75em;
 }
 
-.register-form-box__header {
-    margin: 0;
+.register-form__form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 20px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+
+.register-form__header {
+    margin: 0 0 .5em 0;
     font-size: 2em;
     color: #fff;
     font-family: "TitilliumText22";
     font-weight: 100;
+    text-shadow: 0 2px 2px black;
+}
+
+.register-form__input-box {
+    width: 85%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.register-form__image {
+    padding: 0 15px;
+    border-right: 1px solid #c6c6c6;
+}
+
+.register-form__input {
+    border: none;
+    padding-left: 15px;
+    font-family: "TitilliumText22L";
+    width: 70%;
+}
+
+.input-box__checkbox {
+    border: none;
+    margin: 0 auto;
+    font-family: "TitilliumText22L";
+    color: #c6c6c6;
+}
+
+.register-form__tick {
+    margin-right: 15px;
 }

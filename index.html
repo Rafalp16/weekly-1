@@ -16,21 +16,44 @@
                 <img src="img/logo.png" alt="masteralb creative" class="site-header__logo">
             </header>
             <main class="site-main">
-                <div class="site-main__register-form-box">
-                    <h2 class="register-form-box__header">Register Form</h2>
-                    <form class="register-form-box__form">
-                        <label for="username"></label>
-                        <input id="username" type="text" placeholder="Username">
-                        <label for="password"></label>
-                        <input id="password" type="text" placeholder="Password">
-                        <label for="confirmpass"></label>
-                        <input for="confirmpass" type="text" placeholder="Confirm Password">
-                        <label for="email"></label>
-                        <input id="email" type="email" placeholder="Email">
-                        <label for="location"></label>
-                        <input id="location" type="text" placeholder="Your Location">
-                        <label for="accept"></label>
-                        <input id="accept" type="text">
+                <div class="register-form">
+                    <h2 class="register-form__header">Register Form</h2>
+                    <form class="register-form__form">
+                        <div class="register-form__input-box">
+                            <img src="img/username.png" alt="" class="register-form__image">
+                            <input id="username" type="text" placeholder="Username" class="register-form__input">
+                        </div>
+                        
+                        <div class="register-form__input-box">
+                            <img src="img/password.png" alt="" class="register-form__image">
+                            <input id="username" type="password" placeholder="Password" class="register-form__input">
+                        </div>
+                        
+                        
+                        <div class="register-form__input-box">
+                            <img src="img/password.png" alt="" class="register-form__image">
+                            <input id="confirm-password" type="password" placeholder="Confirm Password" class="register-form__input">
+                        </div>
+                        
+                        <div class="register-form__input-box">
+                            <img src="img/email.png" alt="" class="register-form__image">
+                            <input id="email" type="email" placeholder="Email" class="register-form__input">
+                        </div>
+                        
+                        <div class="register-form__input-box">
+                        <img src="img/location.png" alt="" class="register-form__image">
+                        <select name="location" class="register-form__input">
+                            <option disabled="disabled" selected="selected">Your Location</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        </div>
+                        
+                        <div class="register-form__input-box input-box__checkbox">
+                        <input type="checkbox" name="accept" value="accept" class="register-form__tick">I have read and accept the terms of use.
+                        </div>
+                        
                         <button>Sign up</button>
                     </form>
                 </div>
