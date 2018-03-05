@@ -7,21 +7,26 @@ body {
 
 .site-header {
     width: 26.8125em;
-    margin: 3.4375em auto 0;
+    margin: 3.4375em auto 1em;
 }
 
 .site-header__logo {
     opacity: 0.2;
 }
 
-.register-form {
-    text-align: center;
-    margin-left: 5.375em;
-    width: 26.25em;
-    height: 28.75em;
+.site-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.register-form__form {
+.form-container {
+    text-align: center;
+    width: 26.25em;
+    margin: 0 2.5em 5.3125em;
+}
+
+.form {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -30,7 +35,7 @@ body {
     background-clip: padding-box;
 }
 
-.register-form__header {
+.form-header {
     margin: 0 0 .5em 0;
     font-size: 2em;
     color: #fff;
@@ -39,36 +44,107 @@ body {
     text-shadow: 0 2px 2px black;
 }
 
-.register-form__input-box {
+.form__item {
     width: 85%;
-    height: 40px;
+    height: 2.5em;
     margin: 0 auto;
     border: 1px solid #c6c6c6;
     border-radius: 3px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
-.register-form__image {
-    padding: 0 15px;
+.form__textarea {
+    height: 10em;
+}
+
+.item__image {
+    padding: 0 1em;
     border-right: 1px solid #c6c6c6;
 }
 
-.register-form__input {
+.item__input {
     border: none;
-    padding-left: 15px;
+    padding-left: 1em;
     font-family: "TitilliumText22L";
     width: 70%;
 }
 
-.input-box__checkbox {
+.item__textarea {
+    width: 100%;
+    resize: none;
     border: none;
-    margin: 0 auto;
+    align-self: flex-start;
+    padding: .5em;
+}
+
+.form--checkbox {
+    border: none;
+    margin: 0.3125em auto;
     font-family: "TitilliumText22L";
     color: #c6c6c6;
 }
 
-.register-form__tick {
-    margin-right: 15px;
+.checkbox__sign-in {
+    margin: 20px auto;
+}
+
+.item__tick {
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+
+.checkmark {
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.checkmark:hover {
+    background: linear-gradient(#addc54, #7ec31f);
+    border: 1px solid #3b9a00;
+}
+    
+.item__sign {
+    margin: 0 auto 1.25em;
+}
+
+.item__select {
+    width: 80%;
+}
+
+.sign__button {
+    width: 100%;
+    height: 46px;
+    margin: 0 auto;
+    background: linear-gradient(#addc54, #7ec31f);
+    border: 1px solid #3b9a00;
+    border-radius: 3px;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: "TitilliumText22";
+    text-shadow: 1px 1px 1px #000;
+}
+
+.button--small {
+    width: 40%;
+    height: 40px;
+    margin-right: 0px;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
