@@ -1,0 +1,29 @@
+@font-face { font-family: "TitilliumText22"; src: url('fonts/TitilliumText22.otf'); }
+
+body {
+    background: url(img/background.png) no-repeat center top / cover;
+}
+
+.site-header {
+    width: 26.8125em;
+    margin: 3.4375em auto 0;
+    font-family: 
+}
+
+.site-header__logo {
+    opacity: 0.2;
+}
+
+.site-main__register-form-box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.register-form-box__header {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+    font-family: "TitilliumText22";
+    font-weight: 100;
+}
