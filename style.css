@@ -191,6 +191,8 @@ body {
 .item__select {
     width: 70%;
     -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
     color: #808080;
 }
 
