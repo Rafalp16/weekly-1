@@ -37,7 +37,8 @@ body {
 
 @media (max-width: 37.5em) {
     .form-container {
-        width: 100vw;
+        width: 95vw;
+        margin: 0 0 2.1875em;
     }
     .left-col {
         display: flex;
