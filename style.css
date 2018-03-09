@@ -14,6 +14,15 @@ body {
     opacity: 0.2;
 }
 
+@media (max-width: 37.5em) {
+    .site-header {
+        width: 90vw;
+    }
+    .site-header__logo {
+        width: 100%;
+    }
+}
+
 .site-main {
     display: flex;
     justify-content: center;
@@ -23,7 +32,18 @@ body {
 .form-container {
     text-align: center;
     width: 26.25em;
-    margin: 0 2.5em 2.1875em;
+    margin: 0 2em 2.1875em;
+}
+
+@media (max-width: 37.5em) {
+    .form-container {
+        width: 100vw;
+    }
+    .left-col {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center; 
+    }
 }
 
 .form {
@@ -35,6 +55,14 @@ body {
     background-clip: padding-box;
 }
 
+@media (max-width: 37.5em) {
+    .form {
+        width: 90%;
+        margin: 0 auto;
+        border: 5px rgba(0, 0, 0, 0.2) solid;
+    }
+}
+
 .form-header {
     margin: 0 0 .5em 0;
     font-size: 2em;
@@ -42,6 +70,12 @@ body {
     font-family: "TitilliumText22";
     font-weight: 100;
     text-shadow: 0 2px 2px black;
+}
+
+@media (max-width: 37.5em) {
+    .form-header {
+        font-size: 1.5em;
+    }
 }
 
 .form__item {
@@ -55,18 +89,51 @@ body {
     margin-top: 1.25em;
 }
 
-.form__textarea {
-    height: 15em;
+@media (max-width: 37.5em) {
+    .form__item {
+        width: 90%;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0px;
+    }
 }
 
-.item__image {
-    padding: 0 1em;
+.item__label {
+    height: 1.75em;
+    width: 3.25em;
     border-right: 1px solid #c6c6c6;
+    cursor: pointer;
+}
+
+.label__username {
+    background: url(img/username.png) no-repeat center center;
+}
+
+.label__password {
+    background: url(img/password.png) no-repeat center center;
+}
+
+.label__email {
+    background: url(img/email.png) no-repeat center center;
+}
+
+.label__phone {
+    background: url(img/phone.png) no-repeat center center;
+}
+
+.label__location {
+    background: url(img/location.png) no-repeat center center;
+}
+
+.form__textarea {
+    height: 15em;
+    border: 1px solid #c6c6c6;
 }
 
 .item__input {
     border: none;
-    padding-left: 1em;
+    margin-left: 1em;
     font-family: "TitilliumText22L";
     width: 70%;
 }
@@ -93,7 +160,7 @@ body {
 
 .item__tick {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     display: none;
 }
 
@@ -122,7 +189,9 @@ body {
 }
 
 .item__select {
-    width: 80%;
+    width: 70%;
+    -webkit-appearance: none;
+    color: #808080;
 }
 
 .form__button {
@@ -136,6 +205,17 @@ body {
     color: #fff;
     font-family: "TitilliumText22";
     text-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background: linear-gradient(#7ec31f, #addc54);
+}
+
+@media (max-width: 37.5em) {
+    .form__button {
+        font-size: 1em;
+    }
 }
 
 .button--small {
@@ -143,6 +223,12 @@ body {
     height: 40px;
     margin-right: 0px;
     font-size: 1.125em;
+}
+
+@media (max-width: 37.5em) {
+    .button--small {
+        font-size: 1em;
+    }
 }
 
 .button--left {
@@ -154,9 +240,18 @@ body {
     width: 45%;
 }
 
+.button--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .button__cancel {
     background: linear-gradient(#f76f7f, #f03747);
     border: 1px solid #a2202a;
+}
+
+.button__cancel:hover {
+    background: linear-gradient(#f03747, #f76f7f);
 }
 
 .visuallyhidden {
@@ -173,6 +268,7 @@ body {
 .bottom-container {
     width: 22.5em;
     margin: 0 auto;
+    text-align: center;
 }
 
 .bottom-container__logo {
@@ -184,5 +280,23 @@ body {
 .bottom-container__website {
     width: 15.625em;
     opacity: 0.2;
-    margin: 2em 3.4375em;
+    margin: 2em 0;
 }
+
+@media (max-width: 37.5em) {
+    .bottom-container {
+        width: 90vw;
+    }
+    .bottom-container__logo, .bottom-container__website {
+        width: 100%;
+    }
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
