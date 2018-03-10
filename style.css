@@ -104,26 +104,25 @@ body {
     height: 1.75em;
     width: 3.25em;
     border-right: 1px solid #c6c6c6;
-    cursor: pointer;
 }
 
-.label__username {
+.item__icon-username {
     background: url(img/username.png) no-repeat center center;
 }
 
-.label__password {
+.item__icon-password {
     background: url(img/password.png) no-repeat center center;
 }
 
-.label__email {
+.item__icon-email {
     background: url(img/email.png) no-repeat center center;
 }
 
-.label__phone {
+.item__icon-phone {
     background: url(img/phone.png) no-repeat center center;
 }
 
-.label__location {
+.item__icon-location {
     background: url(img/location.png) no-repeat center center;
 }
 
@@ -134,9 +133,10 @@ body {
 
 .item__input {
     border: none;
-    margin-left: 1em;
+    margin-left: 0;
     font-family: "TitilliumText22L";
-    width: 70%;
+    width: 80%;
+    padding: 11px;
 }
 
 .item__textarea {
@@ -190,7 +190,7 @@ body {
 }
 
 .item__select {
-    width: 70%;
+    width: 85%;
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
