@@ -1,6 +1,14 @@
 @font-face { font-family: "TitilliumText22"; src: url('fonts/TitilliumText22.otf'); }
 @font-face { font-family: "TitilliumText22L"; src: url('fonts/TitilliumText22Light.otf'); }
 
+html { 
+    box-sizing: border-box; 
+} 
+
+*, *:before, *:after { 
+    box-sizing: inherit; 
+}
+
 body {
     background: url(img/background.png) no-repeat center top / cover;
 }
@@ -102,7 +110,7 @@ body {
 
 .item__label {
     height: 1.75em;
-    width: 3.25em;
+    flex-basis: 3.25em;
     border-right: 1px solid #c6c6c6;
 }
 
@@ -127,7 +135,7 @@ body {
 }
 
 .form__textarea {
-    height: 15em;
+    height: auto;
     border: 1px solid #c6c6c6;
 }
 
@@ -135,7 +143,8 @@ body {
     border: none;
     margin-left: 0;
     font-family: "TitilliumText22L";
-    width: 80%;
+    width: 85%;
+    height: 100%;
     padding: 11px;
 }
 
@@ -143,29 +152,28 @@ body {
     width: 100%;
     resize: none;
     border: none;
+    
+    resize: vertical;
     align-self: flex-start;
-    padding: .5em;
+    padding: .7em;
     font-family: "TitilliumText22L";
 }
 
-.form--checkbox {
+.item--checkbox {
     border: none;
     margin: 0.3125em auto;
     font-family: "TitilliumText22L";
     color: #c6c6c6;
 }
 
-.checkbox__sign-in {
-    margin: 20px auto;
+.checkbox__label {
+    display: flex;
+    align-items: center;
 }
 
-.item__tick {
-    position: absolute;
-    opacity: 1;
-    display: none;
-}
-
-.checkmark {
+.checkbox__input + label:before {
+    display: inline-block;
+    content: '';
     height: 1.25em;
     width: 1.25em;
     background-color: #fff;
@@ -175,16 +183,30 @@ body {
     cursor: pointer;
 }
 
+.checkbox__input + label:hover:before {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.checkbox__input:checked + label:before {
+    background: transparent linear-gradient(#addc54, #7ec31f);
+    padding: 4px;
+    background-clip: content-box;
+}
+
+.checkbox__sign-in {
+    margin: 20px auto;
+}
+
+.checkbox__input {
+    position: absolute;
+    opacity:0;
+}
+
 .recover__send {
     margin: 20px auto;
     border: none;
 }
 
-.checkmark:hover {
-    background: linear-gradient(#addc54, #7ec31f);
-    border: 1px solid #3b9a00;
-}
-    
 .item__sign {
     margin: 0 auto 1.25em;
 }
@@ -195,6 +217,9 @@ body {
     -moz-appearance:    none;
     appearance:         none;
     color: #808080;
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .form__button {

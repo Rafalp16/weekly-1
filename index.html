@@ -25,28 +25,28 @@
                                 <label for="register-username" class="item__label item__icon-username">
                                     <span class="visuallyhidden">username</span>
                                 </label>
-                                <input id="register-username" type="text" placeholder="Username" class="item__input">
+                                <input required id="register-username" type="text" placeholder="Username" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="register-password" class="item__label item__icon-password">
                                     <span class="visuallyhidden">password</span>
                                 </label>
-                                <input id="register-password" type="password" placeholder="Password" class="item__input">
+                                <input required id="register-password" type="password" placeholder="Password" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="register-confirm-password" class="item__label item__icon-password">
                                     <span class="visuallyhidden">confirm password</span>
                                 </label>
-                                <input id="register-confirm-password" type="password" placeholder="Confirm Password" class="item__input">
+                                <input required id="register-confirm-password" type="password" placeholder="Confirm Password" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="register-email" class="item__label item__icon-email">
                                     <span class="visuallyhidden">email</span>
                                 </label>
-                                <input id="register-email" type="text" placeholder="Email" class="item__input">
+                                <input required id="register-email" type="email" placeholder="Email" class="item__input">
                             </div>
 
                             <div class="form__item">
@@ -61,15 +61,14 @@
                                 </select>
                             </div>
 
-                            <div class="form__item form--checkbox">
-                                <span class="checkmark"></span>
-                                <label for="register-accept">I have read and accept the terms of use.
+                            <div class="form__item item--checkbox">
+                                <input required id="register-accept" type="checkbox" name="accept" value="accept" class="checkbox__input">
+                                <label for="register-accept" class="checkbox__label">I have read and accept the terms of use.
                                 </label>
-                                <input id="register-accept" type="checkbox" name="accept" value="accept" class="item__tick">
                             </div>
 
                             <div class="form__item item__sign">
-                                <input class="form__button" id="submit" type="submit" value="Sign up">
+                                <input required class="form__button" id="register-submit" type="submit" value="Sign up">
                             </div>
                         </form>
                     </div>
@@ -82,28 +81,28 @@
                                 <label for="email-username" class="item__label item__icon-username">
                                     <span class="visuallyhidden">your name</span>
                                 </label>
-                                <input id="email-username" type="text" placeholder="Your Name" class="item__input">
+                                <input required id="email-username" type="text" placeholder="Your Name" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="email-email" class="item__label item__icon-email">
                                     <span class="visuallyhidden">email</span>
                                 </label>
-                                <input id="email-email" type="text" placeholder="Your Email" class="item__input">
+                                <input required id="email-email" type="email" placeholder="Your Email" class="item__input">
                             </div>
                             
                             <div class="form__item form__textarea">
-                                <textarea class="item__textarea" placeholder="Type your message..." rows="11"></textarea>
+                                <textarea class="item__textarea" placeholder="Type your message..." rows="12"></textarea>
                             </div>
 
-                            <div class="form__item form--checkbox">
-                                <span class="checkmark"></span>
-                                <label for="accept" class="visuallyhidden">I have read and accept the terms of use.</label>
-                                <input type="checkbox" name="accept" value="accept" class="item__tick">Send a copy to my Email
+                           <div class="form__item item--checkbox">
+                                <input required id="email-accept" type="checkbox" name="accept" value="accept" class="checkbox__input">
+                                <label for="email-accept" class="checkbox__label">Send a copy to my Email.
+                                </label>
                             </div>
 
                             <div class="form__item item__sign">
-                                <input class="form__button" id="submit" type="submit" value="Send Email">
+                                <input required class="form__button" id="email-submit" type="submit" value="Send Email">
                             </div>
                         </form>
                     </div>
@@ -118,21 +117,21 @@
                                 <label for="sign-username" class="item__label item__icon-username">
                                     <span class="visuallyhidden">username</span>
                                 </label>
-                                <input id="sign-username" type="text" placeholder="Username" class="item__input">
+                                <input required id="sign-username" type="text" placeholder="Username" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="sign-password" class="item__label item__icon-password">
                                     <span class="visuallyhidden">password</span>
                                 </label>
-                                <input id="sign-password" type="password" placeholder="Password" class="item__input">
+                                <input required id="sign-password" type="password" placeholder="Password" class="item__input">
                             </div>
 
-                             <div class="form__item form--checkbox checkbox__sign-in">
-                                <span class="checkmark"></span>
-                                <label for="accept" class="visuallyhidden">Remember me</label>
-                                <input type="checkbox" name="accept" value="accept" class="item__tick">Remember me
-                                <input class="form__button button--small" id="submit" type="submit" value="Sign in"> 
+                             <div class="form__item item--checkbox checkbox__sign-in">
+                                <input required id="sign-accept" type="checkbox" name="accept" value="accept" class="checkbox__input">
+                                <label for="sign-accept" class="checkbox__label">Remember me
+                                </label>
+                                <input required class="form__button button--small" id="sign-submit" type="submit" value="Sign in"> 
                             </div>
                         </form>
                     </div>
@@ -145,19 +144,19 @@
                                 <label for="recover-email" class="item__label item__icon-email">
                                     <span class="visuallyhidden">email</span>
                                 </label>
-                                <input id="recover-email" type="text" placeholder="Enter your Email" class="item__input">
+                                <input required id="recover-email" type="email" placeholder="Enter your Email" class="item__input">
                             </div>
 
                             <div class="form__item">
                                 <label for="recover-phone" class="item__label item__icon-phone">
                                     <span class="visuallyhidden">phone number</span>
                                 </label>
-                                <input id="recover-phone" type="text" placeholder="Enter your Phone number" class="item__input">
+                                <input required id="recover-phone" type="tel" placeholder="Enter your Phone number" class="item__input">
                             </div>
 
                              <div class="form__item recover__send">
-                                <input class="form__button button--small button--left" id="submit" type="submit" value="Send">
-                                <input class="form__button button--small button--right button--disabled" id="submit" type="submit" value="Done">
+                                <input required class="form__button button--small button--left" id="recover-submit" type="submit" value="Send">
+                                <input required class="form__button button--small button--right button--disabled" id="recover-done" type="submit" value="Done">
                             </div>
                         </form>
                     </div>
@@ -170,12 +169,12 @@
                                 <label for="subscribe-email" class="item__label item__icon-email">
                                     <span class="visuallyhidden">email</span>
                                 </label>
-                                <input id="subscribe-email" type="text" placeholder="Enter your Email" class="item__input">
+                                <input required id="subscribe-email" type="email" placeholder="Enter your Email" class="item__input">
                             </div>
 
                              <div class="form__item recover__send">
-                                <input class="form__button button--small button--left" id="submit" type="submit" value="Subscribe">
-                                <input class="form__button button__cancel button--small button--right" id="submit" type="submit" value="No, Thanks">
+                                <input required class="form__button button--small button--left" id="subscribe-submit" type="submit" value="Subscribe">
+                                <input required class="form__button button__cancel button--small button--right" id="subscribe-reject" type="submit" value="No, Thanks">
                             </div>
                         </form>
                     </div>
