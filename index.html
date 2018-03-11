@@ -15,6 +15,7 @@
             <header class="site-header">
                 <img src="img/logo.png" alt="masteralb creative" class="site-header__logo">
             </header>
+            
             <main class="site-main">
                 <div class="left-col">
                     <!-- REGISTER FORM -->
@@ -54,7 +55,7 @@
                                     <span class="visuallyhidden">location</span>
                                 </label>
                                 <select id="register-location" name="location" class="item__input item__select">
-                                    <option disabled="disabled" selected="selected">Your Location</option>
+                                    <option disabled selected>Your Location</option>
                                     <option value="1">Option 1</option>
                                     <option value="2">Option 2</option>
                                     <option value="3">Option 3</option>
@@ -68,7 +69,7 @@
                             </div>
 
                             <div class="form__item item__sign">
-                                <input required class="form__button" id="register-submit" type="submit" value="Sign up">
+                                <input class="form__button" id="register-submit" type="submit" value="Sign up">
                             </div>
                         </form>
                     </div>
@@ -102,7 +103,7 @@
                             </div>
 
                             <div class="form__item item__sign">
-                                <input required class="form__button" id="email-submit" type="submit" value="Send Email">
+                                <input class="form__button" id="email-submit" type="submit" value="Send Email">
                             </div>
                         </form>
                     </div>
@@ -131,7 +132,7 @@
                                 <input required id="sign-accept" type="checkbox" name="accept" value="accept" class="checkbox__input">
                                 <label for="sign-accept" class="checkbox__label">Remember me
                                 </label>
-                                <input required class="form__button button--small" id="sign-submit" type="submit" value="Sign in"> 
+                                <input class="form__button button--small" id="sign-submit" type="submit" value="Sign in"> 
                             </div>
                         </form>
                     </div>
@@ -155,8 +156,8 @@
                             </div>
 
                              <div class="form__item recover__send">
-                                <input required class="form__button button--small button--left" id="recover-submit" type="submit" value="Send">
-                                <input required class="form__button button--small button--right button--disabled" id="recover-done" type="submit" value="Done">
+                                <input class="form__button button--small button--left" id="recover-submit" type="submit" value="Send">
+                                <input class="form__button button--small button--right button--disabled" id="recover-done" type="submit" value="Done" disabled>
                             </div>
                         </form>
                     </div>
@@ -173,8 +174,8 @@
                             </div>
 
                              <div class="form__item recover__send">
-                                <input required class="form__button button--small button--left" id="subscribe-submit" type="submit" value="Subscribe">
-                                <input required class="form__button button__cancel button--small button--right" id="subscribe-reject" type="submit" value="No, Thanks">
+                                <input class="form__button button--small button--left" id="subscribe-submit" type="submit" value="Subscribe">
+                                <input class="form__button button__cancel button--small button--right" id="subscribe-reject" type="submit" value="No, Thanks">
                             </div>
                         </form>
                     </div>

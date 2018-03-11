@@ -152,7 +152,7 @@ body {
     width: 100%;
     resize: none;
     border: none;
-    
+    min-height: 5em;
     resize: vertical;
     align-self: flex-start;
     padding: .7em;
@@ -181,6 +181,11 @@ body {
     border-radius: 5px;
     margin-right: 1em;
     cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkbox__input:focus + label:before {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .checkbox__input + label:hover:before {
